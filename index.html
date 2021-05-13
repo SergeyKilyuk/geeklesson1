@@ -5,18 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
     <title>Shop</title>
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo.svg" alt="logo" width="44" height="38">
-        <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
-        <button type="button"><img src="./img/burger.svg" alt="burger" width="32" height="23"></button>
-        <a href="#"><img src="./img/account.svg" alt="account" width="29" height="29"></a>
-        <a href="#"><img src="./img/basket.svg"></a>
-
-        <nav>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__controls">
+                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                    <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
+                </div>
+                <div class="header__controls">
+                    <button type="button" class="header__button"><img src="./img/burger.svg" alt="burger" width="32"
+                            height="23"></button>
+                    <a class="header__person-link" href="#"><img src="./img/account.svg" alt="account" width="29"
+                            height="29"></a>
+                    <a href="#"><img src="./img/basket.svg"></a>
+                </div>
+            </div>
+        </div>
+        <nav class="header__navigation">
             <h2>menu</h2>
             <ul>
                 <li>
@@ -58,30 +72,32 @@
     </header>
 
     <main>
-        <section>
+        <section class="brand">
             <img src="./img/man.jpg" alt="man" width="800" height="765">
-            <h1>the brand of luxerious fashion</h1>
+            <div class="brand__title--wrapper">
+                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span
+                            class="brand__subtitle brand__subtitle--pink"> fashion</span></span></h1>
+            </div>
         </section>
-        <section>
-            <h2>Stocks</h2>
-            <ul>
-                <li>
-                    <img src="./img/forwoman.jpg" alt="forwoman" width="360" height="260">
+        <section class="offers container">
+            <h2 class="visually-hidden">Stocks</h2>
+            <ul class="offers__list">
+                <li class="offers__item offers__item--woman">
+
                     <p>30% off</p>
                     <h3>for women</h3>
                 </li>
-                <li>
-                    <img src="./img/formen.jpg" alt="formen" width="360" height="260">
+                <li class="offers__item offers__item--man">
+
                     <p>hot deal</p>
                     <h3>for men</h3>
                 </li>
-                <li>
-                    <img src="./img/forkids.jpg" alt="forkids" width="360" height="260">
+                <li class="offers__item offers__item--kids">
                     <p>new arrivals</p>
                     <h3>for kids</h3>
                 </li>
-                <li>
-                    <img src="./img/foraccesories.jpg" alt="accesories" width="1140" height="180">
+                <li class="offers__item offers__item--accesories">
+
                     <p>luxirous & trendy</p>
                     <h3>accesories</h3>
                 </li>
@@ -164,11 +180,11 @@
         <section>
             <img src="./img/background.png" alt="background">
         </section>
+
+
+        <img src="./img/face.jpg" alt="face" width="145" height="150">
+        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
         <ul>
-            <li>
-                <img src="./img/face.jpg" alt="face" width="145" height="150">
-                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-            </li>
             <li>
                 <h2>subscribe</h2>
                 <p>for our newletter and promotion</p>
