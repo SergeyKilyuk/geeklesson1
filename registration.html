@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <title>Registration</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__controls">
+                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                    <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
+                </div>
+                <div class="header__controls">
+                    <button type="button" class="header__button"><img src="./img/burger.svg" alt="burger" width="32"
+                            height="23"></button>
+                    <a class="header__person-link" href="#"><img src="./img/account.svg" alt="account" width="29"
+                            height="29"></a>
+                    <a class="basket" href="#"><img src="./img/basket.svg"></a>
+                </div>
+            </div>
+        </div>
+        <nav class="header__navigation">
+            <h2>menu</h2>
+            <ul>
+                <li>
+                    <a href="#">man</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">woman</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">kids</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Bags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="registration containerMax">
+        <h1 class="registration__text">registration</h1>
+    </section>
+    <main class="reg__main containerMax">
+        <section class="registration__form--notification">
+            <form action="endpoint" class="registration__form--reg">
+                <fieldset>
+                    <legend class="reg__text--name">Your Name</legend>
+                    <div>
+                        <input class="registration__form--name" type="text" placeholder="First Name">
+                    </div>
+                    <div>
+                        <input class="registration__form--lastName" type="text" placeholder="Last Name">
+                    </div>
+                </fieldset>
+                <input type="radio" id="choiseMan1" name="gender">
+                <label class="radio__label" for="choiseMan">Male</label>
+                <input type="radio" id="choiseWoman2" name="gender">
+                <label class="radio__label" for="choiseWoman2">Female</label>
+                <div>
+                    <fieldser>
+                        <legend class="reg__text--details"> Login Details </legend>
+                        <input class="registration__form--email" type="email" placeholder="Email">
+                </div>
+                <div>
+                    <input class="registration__form--password" type="password" placeholder="Password">
+                </div>
+                <div>
+                    <h2 class="reg__text--notificationPass">Please use 8 or more characters, with at least 1 number and
+                        a mixture of uppercase and lowercase letters</h2>
+                </div>
+                <button class="button__joinNow" type="submit">join now</button>
+                </fieldser>
+            </form>
+        </section>
+        <section class="registration__article">
+            <h2 class="registration__article--name">loyalty has its perks</h2>
+            <h3 class="registration__article--description">Get in on the loyalty program where you can earn points and
+                unlock
+                serious perks. Starting with these as soon as you join:</h3>
+            <h4 class="registration__article--point">15% off welcome offer</h4>
+            <h4 class="registration__article--point">Free shipping, returns and exchanges on all orders </h4>
+            <h4 class="registration__article--point">$10 off a purchase on your birthday</h4>
+            <h4 class="registration__article--point">Early access to products</h4>
+            <h4 class="registration__article--point">Exclusive offers & rewards</h4>
+        </section>
+    </main>
+    <footer>
+        <section class="reviews__img--background containerMax">
+            <div class="reviews__img--wrapper ">
+                <img src="./img/background.png" alt="background">
+                <img class="reviews__face--img" src="./img/face.png" alt="face" width="145" height="150">
+                <p class="reviews__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                    purus
+                    condimentum“</p>
+                <ul class="reviews__subscribe">
+                    <li>
+                        <h2 class="reviews__heading">subscribe</h2>
+                        <p class="reviews__subscribe--text">for our newletter and promotion</p>
+                        <form class="form" action="endpoint">
+                            <input class="form__email" type="email" placeholder="Введите ваш Email" required>
+                            <button class="form__button" type="button">Subscribe</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="footer containerMax">
+            <section class="copyright">
+                <p>© 2021 Brand All Rights Reserved.</p>
+            </section>
+            <div class="socialNet">
+                <a href="#"><img src="./img/facebook.svg" alt="facebook" width="32" height="32"></a>
+                <a href="#"><img src="./img/instagramm.svg" alt="instagramm" width="32" height="32"></a>
+                <a href="#"><img src="./img/pindos.svg" alt="pindos" width="32" height="32"></a>
+                <a href="#"><img src="./img/twitter.svg" alt="twitter" width="32" height="32"></a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
