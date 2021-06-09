@@ -26,7 +26,7 @@
                             height="23"></button>
                     <a class="header__person-link" href="#"><img src="./img/account.svg" alt="account" width="29"
                             height="29"></a>
-                    <a href="#"><img src="./img/basket.svg"></a>
+                    <a class="basket" href="#"><img src="./img/basket.svg"></a>
                 </div>
             </div>
         </div>
@@ -72,11 +72,15 @@
     </header>
 
     <main>
-        <section class="brand">
+        <section class="brand containerMax">
             <img src="./img/man.jpg" alt="man" width="800" height="765">
             <div class="brand__title--wrapper">
-                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span
-                            class="brand__subtitle brand__subtitle--pink">fashion</span></span></h1>
+                <h1 class="brand__title">the brand
+                    <div>
+                        <span class="brand__subtitle">of luxerious</span>
+                        <span class="brand__subtitle brand__subtitle--pink">fashion</span>
+                    </div>
+                </h1>
             </div>
         </section>
         <section class="offers container">
@@ -223,11 +227,11 @@
             </ul>
             </div>
         </section>
-
-        <section class="reviews__img--background">
-            <div class="reviews__img--wrapper">
+    </main>
+    <footer>
+        <section class="reviews__img--background containerMax">
+            <div class="reviews__img--wrapper ">
                 <img src="./img/background.png" alt="background">
-
                 <img class="reviews__face--img" src="./img/face.png" alt="face" width="145" height="150">
                 <p class="reviews__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
                     condimentum“</p>
@@ -235,22 +239,27 @@
                     <li>
                         <h2 class="reviews__heading">subscribe</h2>
                         <p class="reviews__subscribe--text">for our newletter and promotion</p>
-                        <form><input placeholder="Введите ваш Email"><button type="button">Submit</button></form>
-
+                        <form class="form" action="endpoint">
+                            <input class="form__email" type="email" placeholder="Введите ваш Email" required>
+                            <button class="form__button" type="button">Subscribe</button>
+                        </form>
                     </li>
                 </ul>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <section>
-            <p>© 2021 Brand All Rights Reserved.</p>
+
+        <section class="footer containerMax">
+            <section class="copyright">
+                <p>© 2021 Brand All Rights Reserved.</p>
+            </section>
+            <div class="socialNet">
+                <a href="#"><img src="./img/facebook.svg" alt="facebook" width="32" height="32"></a>
+                <a href="#"><img src="./img/instagramm.svg" alt="instagramm" width="32" height="32"></a>
+                <a href="#"><img src="./img/pindos.svg" alt="pindos" width="32" height="32"></a>
+                <a href="#"><img src="./img/twitter.svg" alt="twitter" width="32" height="32"></a>
+            </div>
         </section>
-        <a href="#"><img src="./img/facebook.svg" alt="facebook" width="32" height="32"></a>
-        <a href="#"><img src="./img/instagramm.svg" alt="instagramm" width="32" height="32"></a>
-        <a href="#"><img src="./img/pindos.svg" alt="pindos" width="32" height="32"></a>
-        <a href="#"><img src="./img/twitter.svg" alt="twitter" width="32" height="32"></a>
     </footer>
 </body>
 
